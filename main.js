@@ -1,11 +1,11 @@
-var fs = require("fs");
-var my = require("./writer");
+var fs = require('fs');
+var my = require('./writer');
 
-// fs.readFile('text.txt', function (err, data) {
-//     if (err) return console.error(err);
-//     console.log(data.toString());
-//     console.log("read async");
-//  });
+// fs.readFile('text.txt').then(function (err, data) {
+//   if (err) return console.error(err);
+//   console.log(data.toString());
+//   console.log("read async");
+// });
 
 // var read = fs.readFileSync('text.txt');
 // console.log(read.toString());
@@ -25,6 +25,6 @@ async function asyncCall() {
     console.log('End');
     // expected output: "resolved"
   }
-  
+
   asyncCall();
   
